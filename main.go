@@ -20,6 +20,11 @@ var mainSets = []string{"0123456789", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijk
 Там хранятся все предыдущие сгенерированные пароли
 */
 func createFile() (*os.File, error) {
+	dir := "data"
+	if err := os.MkdirAll(dir, os.ModePerm); err != nil {
+		return nil, err
+	}
+	
 	file, err := os.Create(pwdFile)
 	if err != nil {
 		return nil, err
