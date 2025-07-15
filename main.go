@@ -17,7 +17,6 @@ var mainSets = []string{"0123456789", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijk
 
 /*
 Создание  файла passwords.dat .
-на линуксе просто возьмется название .passwords.dat .
 Там хранятся все предыдущие сгенерированные пароли
 */
 func createFile() (*os.File, error) {
