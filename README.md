@@ -10,15 +10,17 @@ go run main.go
 
 ### Docker 
 
+MicrosoftPowershell:
+
 Создать image 
 
-```bash
+```Powershell
 docker build -t password-gen .
 ```
 
 Запустить контейнер
-```bash
-docker run -it --rm -v $(pwd)/data:/app password-generator
+```Powershell
+docker run -it --rm -v ${PWD}\data:/app/data password-gen
 ```
 Файл passwords.dat будет сохраняться в папку data
 
