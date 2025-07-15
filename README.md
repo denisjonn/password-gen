@@ -23,6 +23,6 @@ docker run -it --rm -v $(pwd)/data:/app password-generator
 Файл passwords.dat будет сохраняться в папку data
 
 ## Софт
-Go 1.12.5 и выше
+Go 1.23.2 и выше
 Docker 
 
