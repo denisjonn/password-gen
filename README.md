@@ -10,7 +10,7 @@ go run main.go
 
 ### Docker 
 
-MicrosoftPowershell:
+Windows Powershell:
 
 Создать image 
 
