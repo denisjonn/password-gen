@@ -109,7 +109,8 @@ func checkInput(userInput string) []int {
 		userSetsIndex = append(userSetsIndex, 2)
 	}
 	if len(userSetsIndex) == 0 {
-		panic("не выбран ни один набор символов")
+		fmt.Println("не выбран ни один набор символов")
+		main()
 	}
 
 	return userSetsIndex
@@ -123,7 +124,7 @@ func makeSet(setIDs []int, l int) []rune {
 	}
 	if l < len(setIDs) || l > len(set) {
 		fmt.Printf("длина должна быть от %d до %d\n", len(setIDs), len(set))
-		panic("неверная длина")
+		main()
 	}
 
 	return set
